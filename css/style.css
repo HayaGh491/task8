@@ -1,0 +1,151 @@
+/*google fonts*/
+@import url("http");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background-image: url(../images/image.task8.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+/*header styling*/
+.contact-header {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+.contact-header h2 {
+  color: antiquewhite#0284c7;
+  font-size: 2.2rem;
+  line-height: 1.6;
+}
+.contact-container {
+  width: 100%;
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: #bae6fd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0284c7;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.info-item:nth-child(2).icon-box {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+.detailes h3 {
+  color: #0284c7;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.detailes p {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+/*stylimg the right side card*/
+.contact-foem {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  border-top: 6px solid #0284c7;
+  box-shadow: 0 11px 30px rgba(0, 0, 0, 0.08);
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+}
+.contact-foem h3 {
+  color: #475569;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.input-group,
+.input-group textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #334155;
+  padding: 20px 0px;
+  margin: 20px;
+  font-size: 0.95 rem;
+  color: #334155;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s;
+}
+
+textarea {
+  border: none;
+  outline: none;
+}
+.input-group input:focus,
+.input-group textarea:focus {
+  border-bottom-color: #0284c7;
+}
+
+.input-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.contact-foem button {
+  background-color: #bae6fd;
+  color: #0284c7;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-foem button:hover {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+
+/* Responsive Design for Mobile & Small Screens */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contact-info {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .contact-foem {
+    max-width: 100%;
+  }
+
+  .contact-header h2 {
+    font-size: 1.8rem;
+  }
+}
